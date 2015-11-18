@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+	<head>
+            <title>
+               ACM Git Workshop: Guide            </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/960.css">
+		<script src="js/live.js"></script>
+	</head>
+	<body>
+		<header>
+			<div id="heromast">
+				<div class="container_12">
+					<div class="grid_5">
+						<h1><a href="index.php.html">Git in <br> &nbsp;the Habit</a></h1>
+				<h2><a href="index.php.html">Version Control Workshop</a></h2>
+					</div>
+
+					<div class="grid_4 push_3 event-details">
+						<ul>
+							<li>
+								<strong>Wednesday,</strong>
+							</li>
+							<li>
+								<strong>November 18th 2015</strong>
+							</li>
+							<li>2:00PM &mdash; 4:00PM</li>
+							<li>ECS&mdash;304</li>
+						</ul>
+					</div>
+				</div>
+
+				<nav>
+					<div class="container_12">
+							<ul class="grid_12">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="tutorial.html">Tutorial</a></li>
+							<li><a href="gitcli.html">bash</a></li>
+                            <li><a href="prereq.html">Requirements</a></li>
+                            <li><a href="presentation.html">Presentation</a></li>
+                            <li><a href="about.html">Info</a></li>
+						</ul>
+					</div>				
+				</nav>
+			</div>
+		</header>
+
+		<div class="body-content">
+			<div class="wrapper">
+			<article class="container_12">
+
+<div class="grid_12 tutorial">
+    <br>
+	<h1>Let's set some stuff up</h1>
+
+<ul>
+<li><a href="prereq.php.html">Go over requirements</a></li>
+<li><a href="https://help.github.com/articles/generating-ssh-keys">Generating SSH Keys and setting it up on github</a></li>
+<li><a href="gitcli.php.html">Bash Shell Review</a></li>
+</ul>
+
+<h1>Make a new repository for username.github.io</h1>
+
+<p><img src="img/resu-repos.png" alt="Alt text" /></p>
+
+<h1>Configure your identity</h1>
+
+<pre><code>git config --global user.name "Some Dude"
+git config --global user.email "me@here.com"
+</code></pre>
+
+<h1>Let's make a folder for our code repositories</h1>
+
+<pre><code>cd ~
+mkdir repos
+cd repos
+</code></pre>
+
+<h1>Clone your repository and go into it</h1>
+
+<pre><code>git clone https://github.com/username/username.github.io.git
+cd username.github.io
+</code></pre>
+
+<h1>Get sample files</h1>
+
+<pre><code>curl csulbacm.github.io/acm-star-gitworkshop/resume | sh
+</code></pre>
+
+<h1>View files in file manager</h1>
+
+<pre><code>explorer .  # Windows
+open .      # OS X
+</code></pre>
+
+<h1>Push it to GitHib</h1>
+
+<pre><code>git add . 
+git commit -m "First commit"
+git push origin master
+</code></pre>
+
+</div>
+    
+
+			</article>
+		</div>
+				</div>
+
+		<footer>
+			<h2 class="big-call">Brought to you by:</h2>
+			<div class="logo-container">
+				<a class="footer-logo" href="http://csulb.acm.org">
+					<img src="img/logos/acmlogo.png" alt="CSULB ACM Logo">
+				</a>
+				<!--
+				<a class="footer-logo" href="http://www.csulbsigweb.org">
+					<img src="img/logos/sigweblogo.png" alt="CSULB ACM Logo">
+				</a>
+				<a class="footer-logo" href="http://www.eatsociety.org">
+					<img src="img/logos/eatlogo.png" alt="CSULB EAT Logo">
+				</a>
+				-->
+			</div>
+		</footer>
+
+	</body>
